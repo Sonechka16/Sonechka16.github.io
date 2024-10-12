@@ -1,11 +1,40 @@
 
 h1 {
+    position: relative;
     color: red;
 }
 
-.title {
+/*h1::after{
+    content: "ПОСЛЕ";
+}
+
+h1::before{
+    content: "ДО";
+}
+
+h1::first-letter{
+    color:blueviolet;
+}*/
+
+p::first-line{
+    color: rgb(215, 63, 88);
+}
+
+#title {
     font-size: 50px;
 }
+
 .page-title {
     font-size: 20px;
+}
+
+.page-title,
+#title {
+    border: 5px solid rgb(70, 5, 110);
+    background-color: rgba(123, 161, 222, 0.314);
+}
+
+.btn{
+    padding: 10px 20px;
+    background-color: rgb(204, 141, 231);
 }
