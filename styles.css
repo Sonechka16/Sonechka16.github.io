@@ -4,19 +4,7 @@ h1 {
     color: red;
 }
 
-/*h1::after{
-    content: "ПОСЛЕ";
-}
-
-h1::before{
-    content: "ДО";
-}
-
-h1::first-letter{
-    color:blueviolet;
-}*/
-
-p{
+p {
     color: rgb(233, 40, 104);
     border: 2px solid rgb(3, 120, 13);
 }
