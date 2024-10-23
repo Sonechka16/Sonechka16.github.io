@@ -24,9 +24,6 @@ p {
 }
 
 .btn{
-    padding: 30px 40px;
+    padding: 10px 20px;
     background-color: rgb(204, 141, 231);
-    border-radius: 50%;
-    border: none;
-    vertical-align: top;
 }
