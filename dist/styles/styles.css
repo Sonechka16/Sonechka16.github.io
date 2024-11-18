@@ -91,6 +91,15 @@ img {
   border-color: #BC3324;
   color: #ffffff;
 }
+.btn:hover,
+.btn:active {
+  background-color: #1F1E1E;
+  color: #ffffff;
+}
+.btn--event:hover,
+.btn--event:active {
+  color: #BC3324;
+}
 .home {
   padding: 100px 0;
 }
