@@ -1,3 +1,32 @@
+input,
+textarea,
+select {
+    box-shadow: none;
+    outline: none;
+    color: @black;
+    font-family: @font1;
+}
+
+textarea {
+    resize: none;
+}
+
+input,
+textarea {
+    &::placeholder{
+        color: @grey;
+    }
+}
+
+input:focus,
+textarea:focus {
+    &::placeholder {
+        color: transparent
+    }
+}
+
+
+
 html,
 body {
     width: 100%;
