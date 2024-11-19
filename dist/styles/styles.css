@@ -188,6 +188,58 @@ img {
   font-size: 16px;
   line-height: 1.375;
 }
+.pp {
+  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 90px 40px 50px;
+  background-color: rgba(108, 108, 108, 0.9);
+  overflow-y: auto;
+  z-index: 110;
+}
+.pp__wrapper {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  max-width: 1210px;
+  margin: auto;
+  background-color: #6C6C6C;
+  background-position: 0 0;
+  background-size: auto;
+  background-repeat: repeat;
+  -webkit-box-shadow: 0px 0px 30px rgba(31, 31, 30, 0.55);
+          box-shadow: 0px 0px 30px rgba(31, 31, 30, 0.55);
+}
+@supports ((-webkit-backdrop-filter: blur(20px)) or (backdrop-filter: blur(20px))) {
+  .pp__wrapper {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+.pp__container {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 0 40px 40px;
+}
 .event-card {
   display: -webkit-box;
   display: -ms-flexbox;
