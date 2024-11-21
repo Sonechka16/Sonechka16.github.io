@@ -12,6 +12,7 @@
 
     &__input {
         .is-hidden();
+
         &:checked {
             &~.check__mark {
                 background-color: @black;
@@ -44,5 +45,18 @@
         height: 24px;
         border: 1px solid @black;
         transition: background-color 0.2s;
+    }
+
+    &__label {
+        margin-left: 15px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.3;
+        color: @black;
+
+        &--s {
+            font-size: 14px;
+            line-height: 19px;
+        }
     }
 }
