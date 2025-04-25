@@ -1,22 +1,50 @@
 .reserve {
     display: grid;
     grid-template-columns: 405px 1fr;
+    grid-template-rows: auto 1fr;
     grid-template-areas:
+        "checkbox scheme-title"
         "checkbox scheme"
         "order legend";
     gap: 65px 11%;
     width: 100%;
 
-    &__scheme-wrapper {
-        position: relative;
-        width: 100%;
+    &__scheme-container {
+        display: flex;
+        flex-direction: column; // Устанавливаем вертикальное расположение элементов
+        justify-content: flex-start; // Выравнивание по верхнему краю
+        align-items: center; // Центрирование по горизонтали
+        grid-area: scheme-title; // Убедитесь, что элемент находится в правильной области сетки
+        margin-left: 149px;
+        width: 780px;
+        height: 461px;
+    }
 
-        &::after {
-            content: "";
-            display: block;
-            width: 100%;
-            padding-top: 51.15384%;
-        }
+    &__scheme-title {
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        width: 162px;
+        height: 34px;
+        background-color: @black;
+        color: @white;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 100%;
+        font-family: @font1;
+        text-align: center;
+        text-transform: uppercase;
+
+
+    }
+
+    &__scheme-wrapper {
+        display: flex;
+        box-sizing: border-box;
+        margin-top: 40px;
+
     }
 
     &__scene {
@@ -27,19 +55,38 @@
         height: 100%;
     }
 
+    &__order {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
     &__tickets {
         display: flex;
         justify-content: space-between;
         align-items: baseline;
+        margin-bottom: 10px;
+        font-size: 14px;
+        line-height: 1.2;
     }
 
     &__qty {
+        font-family: @font1;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 100%;
+
         &::after {
             content: " " attr(data-caption) " | " attr(data-price);
         }
     }
 
     &__sum {
+        text-align: right;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 100%;
+
         &::after {
             content: attr(data-currency);
             margin-left: 4px;
@@ -48,14 +95,118 @@
     }
 
     &__total {
+        display: flex;
+        justify-content: center;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+
         &::before {
             content: attr(data-caption);
             margin-right: 30px;
         }
+
         &::after {
             content: attr(data-currency);
             font-size: 0.95em;
             margin-left: 4px;
         }
+    }
+
+    &__buying--tickets {
+        display: block;
+        align-items: baseline;
+        margin-left: 293px;
+        width: 405px;
+        font-family: @font1;
+    }
+
+    &__checks {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 20px;
+
+    }
+
+    &__row {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    &__section--title {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 100%;
+        margin: 0 auto;
+    }
+
+    &__ticket-info {
+        display: flex;
+        flex-direction: column;
+        align-self: flex-end;
+        width: 355px;
+        height: 251px;
+        margin-left: 574px;
+        font-family: @font1;
+    }
+
+    &__ticket-prices {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end; 
+        margin-bottom: 20px; 
+    }
+    
+    &__ticket-price {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 14px;
+        line-height: 1.3;
+        margin-bottom: 10px;
+    }
+    
+    &__ticket-color {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+    }
+    
+    &__ticket-color--red {
+        background-color: @red;
+    }
+    
+    &__ticket-color--black {
+        background-color: @black;
+    }
+    
+
+    &__legend {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end; 
+        margin-top: 20px; 
+    }
+
+    &__legend-item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 14px;
+        line-height: 1.3;
+        margin-bottom: 10px;
+    }
+
+    &__legend-icon {
+        width: 20px; 
+        height: 20px; 
+        object-fit: contain; 
     }
 }

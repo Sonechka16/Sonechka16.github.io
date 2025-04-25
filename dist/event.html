@@ -40,19 +40,31 @@
   <main class="main">
 
     <div class="event">
-      <div class="link-url">Главная / Мероприятия / Вечер | The Best of Sade</div>
+      <div class="event__link-url">Главная / Мероприятия / Вечер | The Best of Sade</div>
       <div class="event__header"> Вечер | The Best of Sade</div>
       <div class="event__text">
-        <div class="event__text-right">
-          <p>16/12/2022</p>
-          <p>Кафе «Птичка»</p>
-        </div>
-        <picture class="images__event">
-          <img src="..\assets\images\sade.jpg" alt="sade" class="images__event" />
-        </picture>
         <div class="event__text-left">
-          <p>20.00 начало</p>
-          <p>Ленина 10 | 2 этаж</p>
+          <a>
+            <img src="..\assets\images\line1.jpg" ald="line1" class="event__text-left-top" />
+          </a>
+          <div class="event__text-left-top">16/12/2022</div>
+          <div class="event__text-left-bottom">Кафе «Птичка»</div>
+          <a>
+            <img src="..\assets\images\line1.jpg" ald="line1" class="event__text-left-bottom" />
+          </a>
+        </div>
+        <a class="event__img">
+          <img src="..\assets\images\events\sade.jpg" alt="sade" class="event__img-major" />
+        </a>
+        <div class="event__text-right">
+          <a>
+            <img src="..\assets\images\line2.jpg" ald="line1" class="event__text-right-top" />
+          </a>
+          <div class="event__text-right-top">20.00 начало</div>
+          <div class="event__text-right-bottom">Ленина 10 | 2 этаж</div>
+          <a>
+            <img src="..\assets\images\line2.jpg" ald="line1" class="event__text-right-bottom" />
+          </a>
         </div>
       </div>
 
@@ -61,7 +73,7 @@
           <div class="article__container">
             <div class="article__content content">
               <div class="article__content-title">Программа мероприятия:</div>
-              <ul>
+              <ul class="article__content--unordered-list">
                 <li>20:15 — Приветствие гостей</li>
                 <li>20:30 — Первая подача блюд | Салаты</li>
                 <li>20:40 — Живой вокал | Композиции 1-3</li>
@@ -71,104 +83,99 @@
                 <li>22:30 — Живой вокал | Композиции 8-9</li>
                 <li>23:00 — Завершение вечера</li>
               </ul>
-              <div class="article__content-title">The Best Of Sade</div>
-              <p>Первый альбом-компиляция Sade, выпущенный в 1994 году. Он содержит 9 треков, включая
-                самые популярные хиты группы,
-                раритеты и их любимые треки. </p>
-              <p>Группа продемонстрировала необычайное долголетие и креативность своей творческой карьеры.
-                Она лидировала
-                музыкальных чартах с 1994 по 1995 год, став четырехкратно платиновой в США и продав
-                более 2 миллионов копий в Европе.</p>
-              <ol>
-                <li>Your Love Is King</li>
-                <li>Hang On To Your Love</li>
-                <li>Smooth Operator</li>
-                <li>Jezebel</li>
-                <li>The Sweetest Taboo</li>
-                <li>Is It A Crime</li>
-                <li>Never As Good As The First Time</li>
-                <li>Love Is Stronger Than Pride</li>
-                <li>Paradise</li>
-              </ol>
+              <div class="description">
+                <div class="article__content-title">The Best Of Sade</div>
+                <div class="article__content-text">Первый альбом-компиляция Sade, выпущенный в 1994
+                  году. Он содержит 9 треков,
+                  включая
+                  самые популярные хиты группы,раритеты и их любимые треки.
+                  <BR />
+                  <BR />Группа
+                  продемонстрировала необычайное долголетие и креативность своей творческой карьеры.
+                  Она лидировала музыкальных чартах с 1994 по 1995 год, став четырехкратно платиновой
+                  в США и продав
+                  более 2 миллионов копий в Европе.
+                </div>
+                <ol class="article__content--ordered-list">
+                  <li>Your Love Is King</li>
+                  <li>Hang On To Your Love</li>
+                  <li>Smooth Operator</li>
+                  <li>Jezebel</li>
+                  <li>The Sweetest Taboo</li>
+                  <li>Is It A Crime</li>
+                  <li>Never As Good As The First Time</li>
+                  <li>Love Is Stronger Than Pride</li>
+                  <li>Paradise</li>
+                </ol>
+              </div>
             </div>
           </div>
-          <form class="reserve">
-            <div class="reserve__checks">
-              <h4 class="reserve__section-title">
-                Забронировать столик
-              </h4>
-
-              <label class="reserve__check check check--red">
-                <input type="checkbox" name="table_1" class="check__input" />
-                <span class="check__mark"></span>
-                <span class="check__label">1 стол</span>
-              </label>
-
-              <label class="reserve__check check">
-                <input type="checkbox" name="table_2" class="check__input" />
-                <span class="check__mark"></span>
-                <span class="check__label">2 стол</span>
-              </label>
-
-              <label class="reserve__check check">
-                <input type="checkbox" name="table_3" class="check__input" />
-                <span class="check__mark"></span>
-                <span class="check__label">3 стол</span>
-              </label>
-
-              <label class="reserve__check check check--red">
-                <input type="checkbox" name="table_4" class="check__input" />
-                <span class="check__mark"></span>
-                <span class="check__label">4 стол</span>
-              </label>
-
-              <label class="reserve__check check check--disabled">
-                <input type="checkbox" name="table_5" class="check__input" disabled />
-                <span class="check__mark"></span>
-                <span class="check__label">5 стол</span>
-              </label>
-
-              <label class="reserve__check check">
-                <input type="checkbox" name="table_6" class="check__input" />
-                <span class="check__mark"></span>
-                <span class="check__label">6 стол</span>
-              </label>
-
-              <label class="reserve__check check check--red">
-                <input type="checkbox" name="table_7" class="check__input" />
-                <span class="check__mark"></span>
-                <span class="check__label">7 стол</span>
-              </label>
-
-              <label class="reserve__check check check--red">
-                <input type="checkbox" name="table_8" class="check__input" />
-                <span class="check__mark"></span>
-                <span class="check__label">8 стол</span>
-              </label>
-
-              <label class="reserve__check check check--red">
-                <input type="checkbox" name="table_9" class="check__input" />
-                <span class="check__mark"></span>
-                <span class="check__label">9 стол</span>
-              </label>
-
-              <label class="reserve__check check">
-                <input type="checkbox" name="table_10" class="check__input" />
-                <span class="check__mark"></span>
-                <span class="check__label">10 стол</span>
-              </label>
-
-              <label class="reserve__check check">
-                <input type="checkbox" name="table_11" class="check__input" />
-                <span class="check__mark"></span>
-                <span class="check__label">11 стол</span>
-              </label>
+          <form class="reserve" action="/submit" method="post">
+            <div class="reserve__buying--tickets">
+              <div class="reserve__checks">
+                <h4 class="reserve__section-title">Забронировать столик</h4>
+                <label class="reserve__check check check--red">
+                  <input type="checkbox" name="table_1" class="check__input" />
+                  <span class="check__mark"></span>
+                  <span class="check__label">1 стол</span>
+                </label>
+                <label class="reserve__check check">
+                  <input type="checkbox" name="table_2" class="check__input" />
+                  <span class="check__mark"></span>
+                  <span class="check__label">2 стол</span>
+                </label>
+                <label class="reserve__check check">
+                  <input type="checkbox" name="table_3" class="check__input" />
+                  <span class="check__mark"></span>
+                  <span class="check__label">3 стол</span>
+                </label>
+                <label class="reserve__check check check--red">
+                  <input type="checkbox" name="table_4" class="check__input" />
+                  <span class="check__mark"></span>
+                  <span class="check__label">4 стол</span>
+                </label>
+                <label class="reserve__check check check--disabled">
+                  <input type="checkbox" name="table_5" class="check__input" disabled />
+                  <span class="check__mark"></span>
+                  <span class="check__label">5 стол</span>
+                </label>
+                <label class="reserve__check check">
+                  <input type="checkbox" name="table_6" class="check__input" />
+                  <span class="check__mark"></span>
+                  <span class="check__label">6 стол</span>
+                </label>
+                <label class="reserve__check check check--red">
+                  <input type="checkbox" name="table_7" class="check__input" />
+                  <span class="check__mark"></span>
+                  <span class="check__label">7 стол</span>
+                </label>
+                <label class="reserve__check check check--red">
+                  <input type="checkbox" name="table_8" class="check__input" />
+                  <span class="check__mark"></span>
+                  <span class="check__label">8 стол</span>
+                </label>
+                <label class="reserve__check check check--red">
+                  <input type="checkbox" name="table_9" class="check__input" />
+                  <span class="check__mark"></span>
+                  <span class="check__label">9 стол</span>
+                </label>
+                <label class="reserve__check check">
+                  <input type="checkbox" name="table_10" class="check__input" />
+                  <span class="check__mark"></span>
+                  <span class="check__label">10 стол</span>
+                </label>
+                <label class="reserve__check check">
+                  <input type="checkbox" name="table_11" class="check__input" />
+                  <span class="check__mark"></span>
+                  <span class="check__label">11 стол</span>
+                </label>
+              </div>
             </div>
 
-            <div class="reserve__scheme">
-              <div class="reserve__scheme-container">
-                <h4 class="reserve__scheme-title">Сцена</h4>
 
+            <div class="reserve__scheme-container">
+              <h4 class="reserve__scheme-title">Сцена</h4>
+              <div class="reserve__scheme">
                 <div class="reserve__scheme-wrapper">
                   <svg class="scene" width="780" height="399" viewBox="0 0 780 399" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g class="scene__dance-floor">
@@ -341,31 +348,105 @@
               </div>
             </div>
 
-            <div class="reserve__order">
-              <h4 class="reserve__section-title">Ваши пригласительные билеты</h4>
-
-              <div class="reserve__tickets-list">
+            <div class="reserve__buying--tickets">
+              <div class="reserve__order">
+                <h4 class="reserve__section-title">Ваши пригласительные билеты</h4>
                 <div class="reserve__tickets">
-                  <div class="reserve__qty" data-caption="шт." data-price="1250">0</div>
-                  <div class="reserve__sum" data-currency="₽">0</div>
+                  <div class="reserve__qty" data-caption="шт." data-price="1400">9</div>
+                  <div class="reserve__sum">12600</div>
+                </div>
+                <div class="reserve__tickets">
+                  <div class="reserve__qty" data-caption="шт." data-price="1250">4</div>
+                  <div class="reserve__sum">5000</div>
+                </div>
+                <div class="reserve__total" data-caption="Сумма">17600</div>
+                <button type="submit" class="btn btn--red reserve__submit">Купить билеты</button>
+              </div>
+            </div>
+
+            <div class="reserve__ticket-info">
+              <h4 class="reserve__section-title">Стоимость пригласительного билета</h4>
+              <div class="reserve__ticket-prices">
+                <div class="reserve__ticket-price">
+                  <span class="reserve__ticket-color reserve__ticket-color--red"></span>
+                  <span>1400 Р | 1 персона</span>
+                </div>
+                <div class="reserve__ticket-price">
+                  <span class="reserve__ticket-color reserve__ticket-color--black"></span>
+                  <span>1250 Р | 1 персона</span>
                 </div>
               </div>
-
-              <div class="reserve__total" data-caption="Сумма" data-currency="₽">0</div>
-
-              <button type="submit" class="btn btn--red reserve__submit">Купить билеты</button>
+              <div class="reserve__legend">
+                <h4 class="reserve__section--title">Примечание</h4>
+                <div class="reserve__legend-item">
+                  <img src="..assets/icons/EllipseBlack.png" alt="Доступные места" class="reserve__legend-icon" />
+                  <span>доступные места</span>
+                </div>
+                <div class="reserve__legend-item">
+                  <img src="..assets/icons/EllipseGray.png" alt="Забронировано" class="reserve__legend-icon" />
+                  <span>забронировано</span>
+                </div>
+              </div>
             </div>
 
-            <div class="legend">
-
-            </div>
-
-          </form>
-        </article>
       </div>
 
+      </form>
+      </article>
+    </div>
+
   </main>
-  <footer class="page-footer">footer</footer>
+  <footer class="page-footer">
+    <div class="page-footer__container">
+      <div class="page-footer__left">
+        <ul class="page-footer__menu">
+          <li>
+            <a href="#" class="page-footer__link">Календарь мероприятий</a>
+          </li>
+          <li>
+            <a href="#" class="page-footer__link page-footer__link--red">Провести мероприятие</a>
+          </li>
+          <li>
+            <a href="#" class="page-footer__link">Стать арендатором</a>
+          </li>
+          <li>
+            <a href="#" class="page-footer__link">Наши проекты</a>
+          </li>
+          <li>
+            <a href="#" class="page-footer__link">Контакты</a>
+          </li>
+        </ul>
+        <p class="page-footer__copyright">© Millennials 2022</p>
+        <p class="page-footer__policy">
+          <a href="#" class="page-footer__policy-link">Политика конфиденциальности</a>
+          <span>Cookies</span>
+        </p>
+      </div>
+      <div class="page-footer__right">
+        <form class="page-footer__form">
+          <label for="email" class="page-footer__form-label">Подпишись и будь в курсе происходящего</label>
+          <div class="page-footer__form-group">
+            <input type="email" id="email" class="page-footer__form-input" placeholder="Email" />
+            <button type="submit" class="page-footer__form-button">Подписаться</button>
+          </div>
+          <label class="page-footer__form-checkbox">
+            <input type="checkbox" checked />
+            <span>Согласен на обработку персональных данных</span>
+          </label>
+        </form>
+        <div class="page-footer__social">
+          <a href="#" class="page-footer__social-link">
+            <img src="assets/icons/instagram.svg" alt="Instagram" />
+          </a>
+          <a href="#" class="page-footer__social-link">
+            <img src="assets/icons/email.svg" alt="Email" />
+          </a>
+        </div>
+        <p class="page-footer__credits">Создание и продвижение <a href="https://tagree.ru" target="_blank">tagree</a>
+        </p>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>

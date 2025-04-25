@@ -1,12 +1,46 @@
 .article {
+
+    &__container {
+        box-sizing: border-box;
+        margin-top: 297px;
+    }
+
     &__content {
         box-sizing: border-box;
-        
+        margin-left: 289px;
+
+        &--unordered-list {
+            font-family: @font1;
+            width: 400px;
+            font-size: 16px;
+            line-height: 32px;
+        }
+
         &-title {
             font-family: @font1;
             font-size: 18px;
             font-weight: 700;
             align-items: center;
         }
+
+        &-text {
+            width: 868px;
+            font-size: 16px;
+            line-height: 22px;
+            margin-top: 20px;
+        }
+
+        &--ordered-list {
+            margin-top: 50px;
+            width: 400px;
+            font-size: 16px;
+            line-height: 22px;
+        }
     }
+}
+
+.li::marker {
+    content: "•";
+    color: @red;
+    font-size: 4px;
 }
