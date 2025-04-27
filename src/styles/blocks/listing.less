@@ -10,8 +10,42 @@
     &__event-card {
         width: calc(33.333% - 40px);
     }
+}
 
-    // &__article-list {
+.show-more {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+    width: 128px;
+    height: 132px;
+    margin: 0 auto; 
+    cursor: pointer;
+    margin-top: 70px;
+    margin-bottom: 100px;
 
-    // }
+    &__text {
+        font-family: @font1;
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        color: @black;
+        text-align: center;
+    }
+
+    &__icon {
+        width: 60px;
+        height: 91px;
+        transition: filter 0.3s, background-color 0.3s;
+    }
+
+    &:hover {
+        filter: brightness(0) saturate(100%) invert(27%) sepia(81%) saturate(748%) hue-rotate(353deg) brightness(91%) contrast(89%);
+    }
+
+    &:active {
+        filter: none;
+        background-color: @red; 
+    }
 }

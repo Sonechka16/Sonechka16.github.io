@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru" class="show-event-popup">
+<html lang="ru">
 
 <head>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -24,7 +24,7 @@
         <a href="#" class="page-header__nav-link">Контакты</a>
       </nav>
       <div class="pager-header__right-block">
-        <a href="#" class="page-header__btn btn">Войти</a>
+        <a href="/event-pp.html" class="page-header__btn btn">Войти</a>
         <!-- <a href="#" class="page-header__name">Александр С.</a> 
                 <a href="#" class="page-header__logout">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -39,9 +39,32 @@
     </div>
   </header>
 
+
   <main class="main">
-    <!-- <div class="home">
-            <article class="article-card home__listing">
+    <div class="home">
+      <div class="home__header">
+        <h1 class="home__title">АРТ — ПРОСТРАНСТВО</h1>
+        <img src="assets/icons/LENNI.png" alt="Lenni art" class="home__logo" />
+        <p class="home__subtitle">ДЛЯ ЛЮДЕЙ, ГОРЯЩИХ СЕРДЦЕМ И ДЕЛОМ
+          <br>МЕСТО ДЛЯ НАСТОЯЩЕГО
+        </p>
+      </div>
+      <div class="home__buttons">
+        <p class="home__buttons--text">Я ХОЧУ:</p>
+        <div class="home__buttons--container">
+          <a href="#" class="btn btn--red">Провести мероприятие</a>
+          <a href="#" class="btn">Стать арендатором</a>
+        </div>
+      </div>
+      <div class="home__section-title">О НАС</div>
+      <div class="home__project">
+        <h2 class="home__project-title">Проект «Millennials»</h2>
+        <p class="home__project-description">
+          Предоставляем молодым талантам площадку, уникальные творческие возможности и желаемые сцены для музыки, проектов и событий.
+        </p>
+      </div>
+
+      <!-- <article class="article-card home__listing">
     <a href="#" class="article-card__link">
         <picture class="article-card__picture">
             <img src="@@img" alt="@@alt" class="article-card__img" />
@@ -60,10 +83,21 @@
         <p class="article-card__description">@@descr</p>
     </div>
 </article>
-        </div> -->
-    <!-- <div class="events">
-            @@include('blocks/event-card)
-        </div> -->
+ -->
+
+    </div>
+    <div class="events">
+      <article class="event-card  @@class">
+        <a href="/event.html" class="event-card__link">
+          <picture class="event-card__picture">
+            <img src="@@img" alt="@@alt" class="event-card__img" />
+          </picture>
+          <h4 class="event-card__title">@@title</h4>
+          <p class="event-card__description">@@descr</p>
+          <time datetime="@@datetime" class="event-card__time">@@time</time>
+        </a> <!-- /event-card__link -->
+      </article>
+    </div>
   </main>
   <footer class="page-footer">
     <div class="page-footer__container">

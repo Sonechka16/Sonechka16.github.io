@@ -1,4 +1,10 @@
 .event {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto; /* Центрирование блока */
+    width: 100%;
+    max-width: 1920px; /* Ограничение ширины */
+
     &__link-url {
         display: block;
         margin-top: 40px;
@@ -26,16 +32,19 @@
     &__text {
         box-sizing: border-box;
         display: flex;
-        margin-top: 303px;
+        margin-top: 80px;
         font-family: @font3;
 
         &-left {
+            margin-top: 218px;
+            margin-right: 58px;
 
             &-top {
                 margin-left: 504px;
                 font-size: 30px;
                 font-weight: 300;
                 line-height: 36px;
+
             }
 
             &-bottom {
@@ -47,7 +56,9 @@
         }
 
         &-right {
-            margin-left: 615px;
+            margin-right: 473px;
+            margin-top: 218px;
+            margin-left: 60px;
 
             &-top {
                 font-size: 30px;
@@ -65,7 +76,7 @@
 
     &__img {
         box-sizing: border-box;
-        position: absolute;
+        display: flex;
         top: 417px;
         left: 712px;
         width: 497px;
