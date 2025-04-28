@@ -54,9 +54,10 @@
             gap: 80px;
             width: 624px;
         }
+
         a {
             display: inline-block;
-            }
+        }
 
     }
 
@@ -78,26 +79,41 @@
 
     &__project {
         box-sizing: border-box;
+        position: relative;
         display: flex;
-        justify-content: center;
+        align-items: center;
+        justify-content: space-between;
         width: 1334px;
-        height: 185px;
+        height: 230px;
+        margin: 0 auto;
         margin-top: 150px;
 
         &-title {
-            font-family: @font2;
-            font-size: 24px;
-            font-weight: 500;
-            margin-bottom: 20px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 473px;
+            height: 60px;
+            font-family: @font1;
+            font-size: 44px;
+            font-weight: 700;
+            line-height: 1.2;
+            text-align: left;
+            margin-bottom: 50px;
         }
 
         &-description {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 867px;
+            height: 75px;
             font-family: @font1;
-            font-size: 16px;
+            font-size: 18px;
             font-weight: 400;
             line-height: 1.5;
-            max-width: 800px;
-            margin: 0 auto 30px;
+            text-align: left;
+            margin: 0;
         }
     }
 }
